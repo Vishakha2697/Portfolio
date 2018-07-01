@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/1192057/pexels-photo-1192057.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+}
+.nav{
+    width: 350px;
+    height: auto;
+    
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+   font-family: 'IM Fell English SC', serif;
+    font-weight: bold;
+
+    display: inline-block;
+    height: 90px;
+    margin: 5px 0;
+    float: left;
+    background-color: black;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+}
+a.active{
+    background-color: white;
+    color: black;
+}
+a.active, .nav a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.a{
+  width: 95%;  
+}
+.b{
+    width: 75%;
+}
+.c{
+ width: 80%;
+}
+.d{
+    width: 90%;
+}
+.content
+{
+    position: absolute;
+    width: 930px;
+    min-height:500px;
+    height: auto;
+/*    background-color: red;*/
+    right: 0;
+    top: 15%;
+}
+.home
+{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    
+}
+
+.home h1
+{
+    font-size: 95px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 8px black;
+    font-family: 'Concert One', cursive;
+}
+
+.home h3
+{
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+    box-shadow: 10px 10px 8px black;
+    font-family: 'Song Myung', serif;
+    color: red;
+}
+.aboutus
+{
+    position: absolute;
+    right: 250px;
+    top: 10px;
+    color: white;
+    font-family: cursive;
+    padding: 0 200px;
+    display: none;
+    left: 0;
+   
+}
+.aboutus p
+{
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: 'Courgette', cursive;
+}
+.gallery
+{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    padding: 0 60px;
+    display: none;
+}
+.gallery .image
+{
+    width: 29%;
+    margin: 2%;
+    float: left;
+}
+.gallery h1{
+    text-align: center;
+}
+.image img
+{
+    width: 100%;
+    transition: all ease 0.5s;
+    transform:scale(1);
+    height: 30%;
+    box-shadow: 10px 10px 8px black;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.contactus
+{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    padding: 0 60px;
+    display: none; 
+    
+}
+.inputtext
+{
+    width: 55%;
+    height: 65px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 8px black;
+}
+.inputmessage
+{ 
+    width: 55%;
+    height: 135px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    box-shadow: 10px 10px 8px black;
+}
+.submitbutton
+{
+    width: 160px;
+    height: 55px;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 28px;
+    border: none;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    margin-top: 25px;
+
+}
+a{text-decoration:none;}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:200px;
+    height:200px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+  }
+  
+  .textOverImage:hover{
+    background-size:110%;
+  }
+  
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+.gallery .image a{
+    background-image: url("../resources/cs.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+<html>
+ <head>
+     <title>Portfolio</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+ </head>   
+  <body>
+      
+   <div class="background">
+       
+       <div class="nav">
+           <a class="a active" href="#">HOME</a>
+            <a class="b" href="#">ABOUT ME</a>
+             <a class="c" href="#">PROJECTS</a>
+             <a class="d" href="#">CONTACT ME</a>
+       </div>
+   </div>
+     <div class="content">
+            <div class="home">
+                <h1>I am Vishakha Chauhan</h1>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="aboutus">
+                <p>Hello,<br>
+                My name is Vishakha Chauhan. I'm an IT engineer. I love singing and dancing when im free. On the Professional basis i like to develop websites. I'm an eager learner and love to learn new and different things.<br> 
+                 <br></p>
+                
+            </div>
+            <div class="gallery">
+                <div class="image col-lg-4 col-md-6 col-sm-6">             
+                  <a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" data-title="Course-Seller" data-text="It is a website for the programming learners to buy different courses to watch and learn. It provides different courses and even a demo video to have a look at. Visiters can sign in and can view and buy different courses. So just have a look at Course Seller."></a>
+                    
+                </div>
+                <div class="image col-lg-4 col-md-6 col-sm-6">
+                   <a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" style="background-image:url(resources/am.PNG)" data-title="Aamchi-Mumbai" data-text="It is an amazing website which u should have a look of before a mumbai darshan.There are different sections in this website like eat,play,top attractions where u can get to know everything about Mumbai and its culture too. So just have a look at Aamchi Mumbai."></a>
+                    
+                </div>
+                <div class="image col-lg-4 col-md-6 col-sm-6">
+                   <a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" style="background-image:url(resources/sw.PNG)" data-title="Shopweb" data-text="It is a website which provides different views and varities for the eager and excited shoppers to explore new things.There are different sections for men and women and everyone can enjoy and view all the upcoming things. So just have a look at the shopweb."></a>
+                   
+                </div>
+                 <div class="image col-lg-4 col-md-6 col-sm-6">
+                   <a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" style="background-image:url(resources/ig.PNG)" data-title="Image-Gallery" data-text="It is a website meant for viewing different images and enjoy the beauty of nature by just viewing them. The images are differently arranged and animated so the visitors can view and enjoy the images virtually. So just have a look at Image Gallery."></a>
+                   
+                </div>
+                 <div class="image col-lg-4 col-md-6 col-sm-6">
+                   <a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" style="background-image:url(resources/tdl.PNG)" data-title="Todo List" data-text="This provides a easy and well todo list on which we can put different things and when they get finished, it can be erased or cut easily. So just have a look at the easy and useful todo list."></a>
+                   
+                </div>
+                <div class="image col-lg-4 col-md-6 col-sm-6">
+                   
+<a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" style="background-image:url(resources/ffd.PNG)" data-title="Franklin's Fine Dining" data-text="It is a website which is meant for the foody people. Visitors can view different dishes in the menu and even can get the whole deatails about the restaurant and the staff.So just have a look at frankli's fine dining.
+	"></a>
+ 
+                </div>
+                
+            </div>
+            <div class="contactus">
+                <div class="contactform">
+                    <form action="" method="post">
+                        <input type="text" name="" class="inputtext" placeholder="First Name">
+                        <input type="text" name="" class="inputtext" placeholder="Last Name">
+                        <input type="email" name="" class="inputtext" placeholder="Email">
+                        <textarea name="" class="inputmessage" cols="4" rows="6" placeholder="Feedback"></textarea>
+                        <input type="button" name="" class="submitbutton" value="Submit">
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+     
+      
+   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> 
+   <script type="text/javascript">
+      
+      $(document).ready(function(){
+          $('a').click(function(){
+              var selected = $(this);
+              $('a').removeClass('.active');
+               $(selected).addClass('active');
+          });
+          var $a = $('.a'),
+         $b = $('.b'),
+         $c = $('.c'),
+         $d = $('.d'),
+         $home = $('.home'),
+         $aboutus = $('.aboutus'),
+        $gallery =$('.gallery'),
+        $contactus =$('.contactus');    
+        
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutus.fadeOut();
+            $gallery.fadeOut();
+            $contactus.fadeOut();
+      });
+           $b.click(function(){
+            $home.fadeOut();
+            $aboutus.fadeIn();
+             $gallery.fadeOut();
+            $contactus.fadeOut();
+        });
+         $c.click(function(){
+            $home.fadeOut();
+            $aboutus.fadeOut();
+             $gallery.fadeIn();
+            $contactus.fadeOut();
+        });
+         $d.click(function(){
+            $home.fadeOut();
+            $aboutus.fadeOut();
+             $gallery.fadeOut();
+            $contactus.fadeIn();
+        });
+    });
+      
+      
+      
+      
+      </script>  
+ 
+ </body>     
+</html>
+
+
+
+
